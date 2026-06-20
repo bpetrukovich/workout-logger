@@ -2,15 +2,30 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.0.3.
 
+Use node version 24.16.0
+
+```bash
+fnm use v24.16.0
+```
+
 ## Development server
 
 To start a local development server, run:
 
 ```bash
-ng serve
+pnpm start
 ```
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+
+To test on the phone while developing, run:
+
+```bash
+pnpm start --host 0.0.0.0
+```
+
+> [!NOTE]
+> This won't work as a PWA on the phone, for this you need to separately serve the prod build.
 
 ## Building
 
