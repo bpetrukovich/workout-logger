@@ -10,6 +10,12 @@
     transform: translateY(-2px);
   }
 
+  mat-card-header {
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0;
+  }
+
   mat-card-title {
     font-size: 18px;
     font-weight: 500;
