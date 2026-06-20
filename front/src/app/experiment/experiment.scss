@@ -1,23 +1,22 @@
-@use '@angular/material' as mat;
-
 .training-card {
   margin: 16px 8px;
   padding: 8px 0;
   border-radius: 16px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08) !important;
+  box-shadow: 0 2px 12px rgb(0 0 0 / 8%) !important;
   transition: all 0.2s;
 
   &:hover {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12) !important;
+    box-shadow: 0 4px 20px rgb(0 0 0 / 12%) !important;
     transform: translateY(-2px);
   }
 
   mat-card-title {
     font-size: 18px;
     font-weight: 500;
+
     .weekday {
       font-weight: 400;
-      color: var(--mat-sys-on-surface-variant, rgba(0, 0, 0, 0.54));
+      color: var(--mat-sys-on-surface-variant, rgb(0 0 0 / 54%));
       font-size: 14px;
     }
   }
@@ -32,7 +31,7 @@
   .exercise-group {
     background: var(--mat-sys-surface-variant, #f8f9fa);
     border-radius: 12px;
-    padding: 8px 12px 4px 12px;
+    padding: 8px 12px 4px;
     border-left: 4px solid var(--mat-sys-primary, #3f51b5);
   }
 
@@ -117,7 +116,6 @@
         font-size: 14px;
 
         mat-icon {
-
         color: var(--mat-sys-error, #ff5722);
           font-size: 18px;
           width: 18px;
@@ -151,13 +149,15 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .training-card {
     margin: 12px 4px;
+
     .exercise-row {
       flex-direction: column;
       align-items: flex-start !important;
     }
+
     .exercise-name {
       min-width: unset;
     }
