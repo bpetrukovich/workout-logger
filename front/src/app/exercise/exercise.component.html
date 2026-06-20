@@ -1,0 +1,22 @@
+<mat-list-item>
+  <div class="exercise-row">
+    @let ex = exercise();
+
+    <span class="exercise-name">{{ ex.name }}</span>
+    <div class="sets-container">
+      @if (ex.type === 'set') {
+        <mat-chip-set>
+          @for (set of ex.sets; track set) {
+            <mat-chip color="primary" class="set-chip">{{ set }}</mat-chip>
+          }
+        </mat-chip-set>
+      }
+
+      @if (ex.type === 'time') {
+        <div class="sets-container">
+          <span class="exercise-time"> <mat-icon>timer</mat-icon> {{ ex.timeMin }}min </span>
+        </div>
+      }
+    </div>
+  </div>
+</mat-list-item>

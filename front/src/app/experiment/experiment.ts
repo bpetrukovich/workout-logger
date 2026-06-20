@@ -5,6 +5,8 @@ import { MatListModule } from '@angular/material/list';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatButtonModule } from '@angular/material/button';
+import { WorkoutComponent } from '../workout/workout.component';
+import { mockWorkouts } from '../workout/mock-workouts';
 
 @Component({
   selector: 'app-experiment',
@@ -15,8 +17,10 @@ import { MatButtonModule } from '@angular/material/button';
     MatDividerModule,
     MatChipsModule,
     MatButtonModule,
+    WorkoutComponent,
   ],
   templateUrl: './experiment.html',
-  styleUrl: './experiment.scss',
 })
-export class Experiment {}
+export class Experiment {
+  workouts = mockWorkouts;
+}

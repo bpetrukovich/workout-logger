@@ -1,0 +1,29 @@
+<mat-card class="training-card">
+  <mat-card-header>
+    <mat-card-title>
+      {{ workout().date }}
+      <span class="weekday">{{ workout().weekday }}</span>
+    </mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content>
+    <div class="exercise-groups">
+      @for (group of workout().exerciseGroups; track group.name) {
+        <app-exercise-group [group]="group"></app-exercise-group>
+      }
+    </div>
+
+    @if (workout().note) {
+      <div class="notes">
+        <mat-icon>comment</mat-icon>
+        <span>{{ workout().note }}</span>
+      </div>
+    }
+  </mat-card-content>
+
+  <mat-card-actions align="end">
+    <button mat-icon-button>
+      <mat-icon>more_vert</mat-icon>
+    </button>
+  </mat-card-actions>
+</mat-card>

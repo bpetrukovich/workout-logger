@@ -1,0 +1,35 @@
+.exercise-group {
+  background: var(--mat-sys-surface-variant, #f8f9fa);
+  border-radius: 12px;
+  padding: 8px 12px 4px;
+  border-left: 4px solid var(--mat-sys-primary, #3f51b5);
+}
+
+.group-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+
+  .group-icon {
+    color: var(--mat-sys-primary, #3f51b5);
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .group-name {
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--mat-sys-on-surface, #1a1a1a);
+    flex: 1;
+  }
+}
+
+.exercise-list {
+  padding: 0 !important;
+}
+
+mat-divider {
+  margin: 4px 0 !important;
+}
