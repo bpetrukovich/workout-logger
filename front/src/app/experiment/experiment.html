@@ -1,70 +1,208 @@
-<mat-card>
-  <div class="date">19 June</div>
-  <div class="exercise-groups">
-    <div class="exercise-group">
-      <div class="exercise-group-name">Подтягивания</div>
-      <div class="set-group">
-        <div class="exercise-name">Широкие подтягивания</div>
-        <div class="exercise-set">3</div>
+<mat-card class="training-card">
+  <mat-card-header>
+    <mat-card-title>
+      19 June
+      <span class="weekday">Saturday</span>
+    </mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content>
+    <div class="exercise-groups">
+      <div class="exercise-group">
+        <div class="group-header">
+          <mat-icon class="group-icon">fitness_center</mat-icon>
+          <span class="group-name">Pull-ups</span>
+          <span class="group-badge">3 sets</span>
+        </div>
+
+        <mat-list class="exercise-list">
+          <mat-list-item>
+            <div class="exercise-row">
+              <span class="exercise-name">Wide grip pull-ups</span>
+              <div class="sets-container">
+                <mat-chip-set>
+                  <mat-chip color="primary" selected class="set-chip">3</mat-chip>
+                </mat-chip-set>
+              </div>
+            </div>
+          </mat-list-item>
+
+          <mat-divider></mat-divider>
+
+          <mat-list-item>
+            <div class="exercise-row">
+              <span class="exercise-name">Pull-ups</span>
+              <div class="sets-container">
+                <mat-chip-set>
+                  <mat-chip color="primary" selected class="set-chip">4</mat-chip>
+                  <mat-chip color="primary" selected class="set-chip">3</mat-chip>
+                </mat-chip-set>
+              </div>
+            </div>
+          </mat-list-item>
+        </mat-list>
       </div>
-      <div class="set-group">
-        <div class="exercise-name">Подтягивания</div>
-        <div class="exercise-set">4</div>
-        <div class="exercise-set">3</div>
+
+      <div class="exercise-group">
+        <div class="group-header">
+          <mat-icon class="group-icon">fitness_center</mat-icon>
+          <span class="group-name">Core</span>
+          <span class="group-badge">3 sets</span>
+        </div>
+
+        <mat-list class="exercise-list">
+          <mat-list-item>
+            <div class="exercise-row">
+              <span class="exercise-name">Hanging leg raises</span>
+              <div class="sets-container">
+                <mat-chip-set>
+                  <mat-chip color="primary" selected class="set-chip">8</mat-chip>
+                  <mat-chip color="primary" selected class="set-chip">9</mat-chip>
+                </mat-chip-set>
+              </div>
+            </div>
+          </mat-list-item>
+
+          <mat-divider></mat-divider>
+
+          <mat-list-item>
+            <div class="exercise-row">
+              <span class="exercise-name">Parallel bar leg raises</span>
+              <div class="sets-container">
+                <mat-chip-set>
+                  <mat-chip color="primary" selected class="set-chip">14</mat-chip>
+                </mat-chip-set>
+              </div>
+            </div>
+          </mat-list-item>
+        </mat-list>
       </div>
     </div>
 
-    <div class="exercise-group">
-      <div class="exercise-group-name">Пресс</div>
-      <div class="set-group">
-        <div class="exercise-name">Подъемы ног в висе</div>
-        <div class="exercise-set">8</div>
-        <div class="exercise-set">9</div>
-      </div>
-      <div class="set-group">
-        <div class="exercise-name">Подъемы ног на брусьях</div>
-        <div class="exercise-set">14</div>
-      </div>
+    <div class="notes">
+      <mat-icon>comment</mat-icon>
+      <span>Feeling some progress in pull-ups</span>
     </div>
-  </div>
-  <div class="notes">Небольшой прогресс чувствую в подтягиваниях</div>
+  </mat-card-content>
+
+  <mat-card-actions align="end">
+    <button mat-icon-button>
+      <mat-icon>more_vert</mat-icon>
+    </button>
+  </mat-card-actions>
 </mat-card>
 
-<mat-card>
-  <div class="exercise-group">
-    <div class="exercise-group-name">Бег</div>
-    <div class="set-group">
-      <div class="exercise-name">Бег</div>
-      <div class="exercise-time">12min</div>
+<mat-card class="training-card">
+  <mat-card-header>
+    <mat-card-title>
+      17 June
+      <span class="weekday">Thursday</span>
+    </mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content>
+    <div class="exercise-groups">
+      <div class="exercise-group">
+        <div class="group-header">
+          <mat-icon class="group-icon">fitness_center</mat-icon>
+          <span class="group-name">Push-ups</span>
+          <span class="group-badge">3 sets</span>
+        </div>
+
+        <mat-list class="exercise-list">
+          <mat-list-item>
+            <div class="exercise-row">
+              <span class="exercise-name">Push-ups</span>
+              <div class="sets-container">
+                <mat-chip-set>
+                  <mat-chip color="primary" selected class="set-chip">4</mat-chip>
+                  <mat-chip color="primary" selected class="set-chip">4</mat-chip>
+                  <mat-chip color="primary" selected class="set-chip">4</mat-chip>
+                </mat-chip-set>
+              </div>
+            </div>
+          </mat-list-item>
+        </mat-list>
+      </div>
+
+      <div class="exercise-group">
+        <div class="group-header">
+          <mat-icon class="group-icon">fitness_center</mat-icon>
+          <span class="group-name">Squats</span>
+          <span class="group-badge">3 sets</span>
+        </div>
+
+        <mat-list class="exercise-list">
+          <mat-list-item>
+            <div class="exercise-row">
+              <span class="exercise-name">Squats</span>
+              <div class="sets-container">
+                <mat-chip-set>
+                  <mat-chip color="primary" selected class="set-chip">12</mat-chip>
+                  <mat-chip color="primary" selected class="set-chip">12</mat-chip>
+                </mat-chip-set>
+              </div>
+            </div>
+          </mat-list-item>
+
+          <mat-divider></mat-divider>
+
+          <mat-list-item>
+            <div class="exercise-row">
+              <span class="exercise-name">Narrow squats</span>
+              <div class="sets-container">
+                <mat-chip-set>
+                  <mat-chip color="primary" selected class="set-chip">12</mat-chip>
+                </mat-chip-set>
+              </div>
+            </div>
+          </mat-list-item>
+        </mat-list>
+      </div>
     </div>
-    <div class="notes">Бегал спокойно</div>
-  </div>
+  </mat-card-content>
+
+  <mat-card-actions align="end">
+    <button mat-icon-button>
+      <mat-icon>more_vert</mat-icon>
+    </button>
+  </mat-card-actions>
 </mat-card>
 
-<mat-card>
-  <div class="date">17 June</div>
-  <div class="exercise-groups">
-    <div class="exercise-group">
-      <div class="exercise-group-name">Отжимания</div>
-      <div class="set-group">
-        <div class="exercise-name">Отжимания</div>
-        <div class="exercise-set">4</div>
-        <div class="exercise-set">4</div>
-        <div class="exercise-set">4</div>
-      </div>
-    </div>
+<mat-card class="training-card">
+  <mat-card-header>
+    <mat-card-title>
+      15 June
+      <span class="weekday">Tuesday</span>
+    </mat-card-title>
+  </mat-card-header>
 
-    <div class="exercise-group">
-      <div class="exercise-group-name">Приседания</div>
-      <div class="set-group">
-        <div class="exercise-name">Приседания</div>
-        <div class="exercise-set">12</div>
-        <div class="exercise-set">12</div>
-      </div>
-      <div class="set-group">
-        <div class="exercise-name">Узкие приседания</div>
-        <div class="exercise-set">12</div>
+  <mat-card-content>
+    <div class="exercise-groups">
+      <div class="exercise-group">
+        <div class="group-header">
+          <mat-icon class="group-icon">directions_run</mat-icon>
+          <span class="group-name">Cardio</span>
+          <span class="group-badge">1 set</span>
+        </div>
+
+        <mat-list class="exercise-list">
+          <mat-list-item>
+            <div class="exercise-row">
+              <span class="exercise-name">Running</span>
+              <div class="sets-container">
+                <span class="exercise-time"> <mat-icon>timer</mat-icon> 12min </span>
+              </div>
+            </div>
+          </mat-list-item>
+        </mat-list>
       </div>
     </div>
-  </div>
+  </mat-card-content>
+
+  <mat-card-actions align="end">
+    <button mat-icon-button>
+      <mat-icon>more_vert</mat-icon>
+    </button>
+  </mat-card-actions>
 </mat-card>
